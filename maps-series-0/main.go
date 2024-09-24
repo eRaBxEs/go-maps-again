@@ -36,4 +36,11 @@ func main() {
 	yourMenu := map[string]float64{}
 	fmt.Printf("yourMenu value:%#v\n", yourMenu)
 
+	// initializing both anotherMenu and yourMenu
+	anotherMenu["eggs"], yourMenu["eggs"] = 1.75, 1.75
+	anotherMenu["bacon"], yourMenu["bacon"] = 3.22, 3.22
+	anotherMenu["sausage"], yourMenu["sausage"] = 1.89, 1.89
+	fmt.Printf("anotherMenu value:%#v\n", anotherMenu)
+	fmt.Printf("anotherMenu value:%#v\n", yourMenu)
+
 }
