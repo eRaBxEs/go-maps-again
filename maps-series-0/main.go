@@ -26,6 +26,10 @@ func main() {
 		"sausage": 1.89,
 	}
 
-	fmt.Printf("vmyMenu alue:%#v\n", myMenu)
+	fmt.Printf("myMenu alue:%#v\n", myMenu)
+
+	// way 3: using the make function to create a map
+	anotherMenu := make(map[string]float64) // Nb:at this point map is non-nil which signifies that it is just empty and not at the default zero type of nil
+	fmt.Printf("anotherMenu value:%#v\n", anotherMenu)
 
 }
