@@ -20,7 +20,7 @@ func main() {
 	fmt.Printf("menu value:%#v\n", menu)
 
 	// way 2: initialize at the point of declaration
-	myMenu := map[string]float64{
+	myMenu := map[string]float64{ // called map literal
 		"eggs":    1.75,
 		"bacon":   3.22,
 		"sausage": 1.89,
@@ -33,7 +33,7 @@ func main() {
 	fmt.Printf("anotherMenu value:%#v\n", anotherMenu)
 
 	// way 4: Creating a ready to use empty map wihout using make function
-	yourMenu := map[string]float64{}
+	yourMenu := map[string]float64{} // called empty map literal
 	fmt.Printf("yourMenu value:%#v\n", yourMenu)
 
 	// initializing both anotherMenu and yourMenu
