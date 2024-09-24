@@ -9,7 +9,7 @@ func main() {
 
 	// way 1: declare and then initialize
 	var menu map[string]float64 // at this point value of map is nil
-	fmt.Printf("value:%#v\n", menu)
+	fmt.Printf("menu value:%#v\n", menu)
 
 	menu = map[string]float64{ // initializing the map
 		"eggs":    1.75,
@@ -17,6 +17,15 @@ func main() {
 		"sausage": 1.89,
 	}
 
-	fmt.Printf("value:%#v\n", menu)
+	fmt.Printf("menu value:%#v\n", menu)
+
+	// way 2: initialize at the point of declaration
+	myMenu := map[string]float64{
+		"eggs":    1.75,
+		"bacon":   3.22,
+		"sausage": 1.89,
+	}
+
+	fmt.Printf("vmyMenu alue:%#v\n", myMenu)
 
 }
