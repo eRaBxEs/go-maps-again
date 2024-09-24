@@ -18,7 +18,7 @@ func main() {
 	}
 
 	// created above is a map of a string to a struct
-	fmt.Printf("menu:%#v", menu)
+	fmt.Printf("menu:%#v\n", menu)
 
 	// The cannot assign to struct field map error
 	// lets try to change the price of beans
@@ -26,5 +26,11 @@ func main() {
 	beans := menu["beans"]
 	beans.price = 0.25    // assign a value to the price field
 	menu["beans"] = beans // update the price
+
+	fmt.Printf("menu: %#v\n", menu)
+
+	// interestingly the field value of the struct in the map can actually be accessed directly via the map name indexed by the key as below:
+	beansPrice := menu["beans"].price
+	fmt.Printf("beansPrice:%#v\n", beansPrice)
 
 }
