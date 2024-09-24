@@ -32,4 +32,8 @@ func main() {
 	anotherMenu := make(map[string]float64) // Nb:at this point map is non-nil which signifies that it is just empty and not at the default zero type of nil
 	fmt.Printf("anotherMenu value:%#v\n", anotherMenu)
 
+	// way 4: Creating a ready to use empty map wihout using make function
+	yourMenu := map[string]float64{}
+	fmt.Printf("yourMenu value:%#v\n", yourMenu)
+
 }
