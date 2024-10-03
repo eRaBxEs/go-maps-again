@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 )
 
 func main() {
@@ -24,4 +25,21 @@ func main() {
 	}
 
 	fmt.Printf("An everything breakfast will cost you %.02f", total)
+
+	// ordering map keys; ordering maps in a certain manner
+	var dishes []string // use a slice
+	for dish := range menu {
+		dishes = append(dishes, dish)
+	}
+
+	fmt.Printf("\ndishes arrangement before sorting: %#v\n", dishes)
+	// Sorting alphabetically
+	sort.Strings(dishes)
+	fmt.Printf("dishes arrangement after sorting: %#v\n", dishes)
+	// now using the ordered slice, print the map key and the map value
+	fmt.Println("The menu in alphabetical order:")
+	for _, dish := range dishes {
+		fmt.Println(dish, menu[dish])
+	}
+
 }
