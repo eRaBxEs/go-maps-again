@@ -39,6 +39,10 @@ func main() {
 	nilMap["The Holy Spirit is real"] = true
 	nilMap["Lucifer is partly good!"] = true
 
-	fmt.Printf("The nilMap now contains: %#v", nilMap)
+	fmt.Printf("The nilMap now contains: %#v\n", nilMap)
+
+	// delete a key in a map
+	delete(nilMap, "Lucifer is partly good!")
+	fmt.Printf("The nilMap now contains: %#v\n", nilMap)
 
 }
