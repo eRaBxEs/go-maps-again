@@ -45,4 +45,8 @@ func main() {
 	delete(nilMap, "Lucifer is partly good!")
 	fmt.Printf("The nilMap now contains: %#v\n", nilMap)
 
+	// To clear a map, pass in an empty map literal
+	m = map[string]bool{}
+	fmt.Printf("The map m  is now empty: %#v", m)
+
 }
