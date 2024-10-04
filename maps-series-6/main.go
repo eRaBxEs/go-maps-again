@@ -35,4 +35,10 @@ func main() {
 		"God is good": true,
 	}
 
+	nilMap["Jesus is alive"] = true
+	nilMap["The Holy Spirit is real"] = true
+	nilMap["Lucifer is partly good!"] = true
+
+	fmt.Printf("The nilMap now contains: %#v", nilMap)
+
 }
