@@ -23,4 +23,11 @@ func main() {
 	var nilMap map[string]bool // Note that a nil map will also have a length of zero
 	fmt.Println("nilMap has a length of", len(nilMap))
 
+	// Best way to identify a nil map is to use this expression below
+	fmt.Println(nilMap == nil)
+	isNil := nilMap == nil
+	if isNil {
+		fmt.Println("Map nilMap is nil")
+	}
+
 }
