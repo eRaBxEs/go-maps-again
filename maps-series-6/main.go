@@ -30,4 +30,9 @@ func main() {
 		fmt.Println("Map nilMap is nil")
 	}
 
+	//add key and value to a nil map
+	nilMap = map[string]bool{
+		"God is good": true,
+	}
+
 }
